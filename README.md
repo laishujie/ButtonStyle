@@ -72,4 +72,5 @@ dependencies {
   </tbody>
 </table>
 
-
+##### 方法 Main Method
+setPressedColor setNormalColor setCurrCorner  setStrokeWidth setStrokeColor
