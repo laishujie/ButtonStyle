@@ -37,7 +37,7 @@ dependencies {
 ```
 #### 预览/preview
 
-![image](https://github.com/laishujie/ButtonStyle/raw/master/20170504121330.png)
+![image](https://github.com/laishujie/ButtonStyle/raw/master/20170612143010.png)
 
 
 #### XML 属性 /XML Attribute 
@@ -49,6 +49,10 @@ dependencies {
     </tr>
   </tdead>
   <tbody>
+   <tr>
+      <td align="center">type</td>
+      <td align="center">根据固定的值快速配置出按钮: ok,info,warning,error</td>
+    </tr>
     <tr>
       <td align="center">normal_color</td>
       <td align="center">默认颜色 /Default color</td>
