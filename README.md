@@ -5,7 +5,7 @@
 #### Gradle
 ```
 dependencies {
-      compile 'com.lai:buttonStyle:1.0.1'
+      compile 'com.lai:buttonStyle:1.0.2'
 }
 ```
 
