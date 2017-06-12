@@ -12,8 +12,6 @@ import android.widget.Button;
 
 /**
  * @author Lai
- * @time 2017/4/28 13:56
- * @describe describe
  */
 
 public class ButtonStyle extends Button {
@@ -31,6 +29,8 @@ public class ButtonStyle extends Button {
 
     GradientDrawable gradientDrawable;
 
+    //按钮类型
+    private  int type;
 
     boolean isTouchPass = true;
 
@@ -52,6 +52,28 @@ public class ButtonStyle extends Button {
     private void init() {
         setGravity(Gravity.CENTER);
         gradientDrawable = new GradientDrawable();
+        //说明配置了快速按钮选项
+        if(type!=0){
+            switch (type){
+                case 1:
+                    normalColor = Color.parseColor("#5CB85C");
+                    pressedColor= Color.parseColor("#449D44");
+                    break;
+                case 2:
+                    normalColor = Color.parseColor("#5BC0DE");
+                    pressedColor= Color.parseColor("#31B0D5");
+                    break;
+                case 3:
+                    normalColor = Color.parseColor("#F0AD4E");
+                    pressedColor= Color.parseColor("#EC971F");
+                    break;
+                case 4:
+                    normalColor = Color.parseColor("#D9534F");
+                    pressedColor= Color.parseColor("#C9302C");
+                    break;
+            }
+        }
+
         gradientDrawable.setColor(normalColor);
         gradientDrawable.setStroke((int) strokeWidth, strokeColor);
         gradientDrawable.setCornerRadius(currCorner);
@@ -75,6 +97,7 @@ public class ButtonStyle extends Button {
             strokeColor = typedArray.getColor(R.styleable.ButtonStyle_stroke_color, Color.TRANSPARENT);
             pressedColor = typedArray.getColor(R.styleable.ButtonStyle_press_color, Color.WHITE);
             currCorner = typedArray.getDimension(R.styleable.ButtonStyle_corner, getResources().getDimension(R.dimen.default_con));
+            type = typedArray.getInt(R.styleable.ButtonStyle_type, 0);
             typedArray.recycle();
         }
     }

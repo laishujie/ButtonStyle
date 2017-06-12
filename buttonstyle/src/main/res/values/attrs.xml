@@ -7,7 +7,12 @@
         <attr name="normal_color" format="reference|color"/>
         <attr name="stroke_width" format="dimension"/>
         <attr name="stroke_color" format="reference|color"/>
-
+        <attr name="type">
+            <enum name="ok" value="1" />
+            <enum name="info" value="2" />
+            <enum name="warning" value="3" />
+            <enum name="error" value="4" />
+        </attr>
     </declare-styleable>
 
 </resources>

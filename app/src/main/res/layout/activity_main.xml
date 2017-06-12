@@ -86,41 +86,6 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Github样式/"
-            android:textColor="#333333"
-            android:textSize="14sp"
-            />
-
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Github"
-            android:textColor="#444444"
-            android:textSize="12sp"
-            />
-    </LinearLayout>
-
-    <com.lai.library.ButtonStyle
-        android:id="@+id/activity_btn_1"
-        android:layout_width="match_parent"
-        android:layout_height="40dp"
-        android:text="@string/app_name"
-        app:normal_color="#F1F1F1"
-        app:press_color="#E9EEF2"
-        app:stroke_color="#CCCDD0"
-        app:stroke_width="1dp"/>
-
-
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_margin="5dp"
-        android:gravity="center_vertical"
-        android:orientation="horizontal">
-
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
             android:text="常用四种/"
             android:textColor="#333333"
             android:textSize="14sp"
@@ -148,8 +113,7 @@
             android:layout_weight="1"
             android:text="成功/Success"
             android:textColor="@android:color/white"
-            app:normal_color="#5CB85C"
-            app:press_color="#449D44"
+            app:type="ok"
             />
 
         <com.lai.library.ButtonStyle
@@ -159,8 +123,8 @@
             android:layout_weight="1"
             android:text="一般信息/Info"
             android:textColor="@android:color/white"
-            app:normal_color="#31B0D5"
-            app:press_color="#31B0D5"/>
+            app:type="info"
+            />
     </LinearLayout>
 
     <LinearLayout
@@ -176,8 +140,7 @@
             android:layout_weight="1"
             android:text="警告/Warning"
             android:textColor="@android:color/white"
-            app:normal_color="#F0AD4E"
-            app:press_color="#EC971F"
+            app:type="warning"
             />
 
         <com.lai.library.ButtonStyle
@@ -187,15 +150,14 @@
             android:layout_weight="1"
             android:text="危险/Danger"
             android:textColor="@android:color/white"
-            app:normal_color="#D9534F"
-            app:press_color="#C9302C"/>
+            app:type="error"/>
     </LinearLayout>
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_margin="5dp"
-        android:text="只要在XML简单的配置就可以实现/属性介绍"
+        android:text="只要在XML简单的配置就可以实现"
         android:textColor="#444444"
         android:textSize="14sp"
         />
@@ -210,6 +172,64 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="type : "
+            android:textColor="#444444"
+            android:textSize="14sp"
+            />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="值为 ok,info,warning,error.快速配置按钮的状态"
+            android:textColor="#444444"
+            android:textSize="12sp"
+            />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="自定义样式/"
+            android:textColor="#333333"
+            android:textSize="14sp"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Github"
+            android:textColor="#444444"
+            android:textSize="12sp"
+            />
+    </LinearLayout>
+
+    <com.lai.library.ButtonStyle
+        android:id="@+id/activity_btn_1"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:text="@string/app_name"
+        android:layout_marginTop="5dp"
+        app:normal_color="#F1F1F1"
+        app:press_color="#E9EEF2"
+        app:stroke_color="#CCCDD0"
+        app:stroke_width="1dp"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:layout_marginTop="5dp"
         android:orientation="horizontal">
 
         <TextView
