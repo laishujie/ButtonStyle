@@ -54,6 +54,7 @@ public class ButtonStyle extends Button {
         gradientDrawable = new GradientDrawable();
         //说明配置了快速按钮选项
         if(type!=0){
+            setTextColor(Color.WHITE);
             switch (type){
                 case 1:
                     normalColor = Color.parseColor("#5CB85C");
