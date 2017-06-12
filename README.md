@@ -27,7 +27,6 @@ dependencies {
           android:layout_height="40dp"
           android:layout_margin="5dp"
           android:text="成功/Success"
-          android:textColor="@android:color/white"
           app:type="ok"/>
           
      <!-- 自定义按钮类型 -->
@@ -87,3 +86,8 @@ dependencies {
 
 ##### 方法 Main Method
 setPressedColor setNormalColor setCurrCorner  setStrokeWidth setStrokeColor
+
+##### 更新日志 Update Logs
+
+#### v1.0.2
+- 新增type属性。增加模板配置按钮
