@@ -5,7 +5,7 @@
 #### Gradle
 ```
 dependencies {
-      compile 'com.lai:buttonStyle:1.0.0'
+      compile 'com.lai:buttonStyle:1.0.1'
 }
 ```
 
@@ -21,7 +21,16 @@ dependencies {
     android:layout_height="match_parent"
     android:orientation="vertical"
    >
-   
+   <!-- 快速配置type使用模板按钮 -->
+      <com.lai.library.ButtonStyle
+          android:layout_width="match_parent"
+          android:layout_height="40dp"
+          android:layout_margin="5dp"
+          android:text="成功/Success"
+          android:textColor="@android:color/white"
+          app:type="ok"/>
+          
+     <!-- 自定义按钮类型 -->
     <com.lai.library.ButtonStyle
         android:id="@+id/activity_btn_1"
         android:layout_width="match_parent"
